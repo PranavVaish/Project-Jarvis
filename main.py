@@ -81,7 +81,7 @@ if __name__ == "__main__":
         audio = r.listen(source,timeout=2,phrase_time_limit=1)
         print("Jarvis thinks you said " + r.recognize_google(audio))
         word = r.recognize_google(audio)
-        if word.lower() == "ok google": 
+        if word.lower() == "jarvis": 
            speak("Yes Sir")
            with sr.Microphone() as source:
             print("Jarvis active...")
